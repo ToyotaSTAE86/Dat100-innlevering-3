@@ -47,5 +47,6 @@ public class DayMain {
         double avgUsage = DailyPower.findAvgPower(powerusage_day);
         System.out.printf("i) Gjennomsnittlig timeforbruk: %.2f kWh%n", avgUsage);
         System.out.println();
+
     }
 }

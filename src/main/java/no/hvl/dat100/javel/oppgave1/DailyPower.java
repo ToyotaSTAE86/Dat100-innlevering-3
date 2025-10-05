@@ -106,5 +106,6 @@ public class DailyPower {
             double average = sum / usage.length;
 
         return average;
+
     }
 }
