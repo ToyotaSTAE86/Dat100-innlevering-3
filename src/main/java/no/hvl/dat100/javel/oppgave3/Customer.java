@@ -4,17 +4,20 @@ public class Customer {
 
     private String name;
     private String email;
-    private int custumer_id;
+    private int customer_id;
     private PowerAgreementType agreement;
 
     public Customer(){
         String name;
         String email;
-        int custumer_id;
+        int customer_id;
         PowerAgreementType agreement;
     }
 
     public Customer(String name, String email, int customer_id, PowerAgreementType agreement) {
+        this.name = name;
+        this.email = email;
+        this.customer_id = customer_id;
     }
 
     public String getName(){
@@ -23,8 +26,8 @@ public class Customer {
     public String getEmail(){
         return email;
     }
-    public int getCustumer_id(){
-        return custumer_id;
+    public int getCustomer_id(){
+        return customer_id;
     }
     public PowerAgreementType getAgreement(){
         return agreement;
@@ -36,12 +39,16 @@ public class Customer {
     public void setEmail(String ny){
         email = ny;
     }
-    public void setCustumer_id(int ny){
-        custumer_id = ny;
+    public void setCustomer_id(int ny){
+        customer_id = ny;
     }
     public void setAgreement(PowerAgreementType ny){
         agreement = ny;
     }
-    // TODO - toString method
+
+    public void Customer toString(){
+
+        return null;
+    }
 
 }
