@@ -39,7 +39,7 @@ public class Customer {
     public void setCustumer_id(int ny){
         custumer_id = ny;
     }
-    public void setAgreement(PowerAgreementType){
+    public void setAgreement(PowerAgreementType ny){
         agreement = ny;
     }
     // TODO - toString method
