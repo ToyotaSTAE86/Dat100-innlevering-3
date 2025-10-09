@@ -44,8 +44,7 @@ public class MonthlyPower {
 
         boolean exceeded = false;
         double usage = 0;
-        int i = 0;
-        while (i<powerusage.length && !exceeded) {
+        for (int i = 0; i < powerusage.length && !exceeded ; i++) {
             int j = 0;
             while (j<powerusage[i].length && !exceeded) {
                 usage += powerusage[i][j];
@@ -65,9 +64,11 @@ public class MonthlyPower {
     public static double computeSpotPrice(double[][] usage, double[][] prices) {
 
         double price = 0;
-
-        // TODO
-
+        for (int i = 0; i < usage.length; i++) {
+            for (int j = 0; j < usage[i].length; j++) {
+                price += usage[i][j] * prices[i][j];
+            }
+        }
         return price;
     }
 
