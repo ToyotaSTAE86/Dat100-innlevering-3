@@ -86,9 +86,15 @@ public class MonthlyPower {
     public static double computeNorgesPrice(double[][] usage) {
 
         double price = 0;
-
-        // TODO
-
+        int i = 0;
+        for (double[] rad : usage) {
+            int j = 0;
+            for (double element : rad) {
+                price += usage[i][j] * 0.5;
+                j++;
+            }
+            i++;
+        }
         return price;
     }
 }
