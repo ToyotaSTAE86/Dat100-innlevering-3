@@ -41,13 +41,13 @@ public class MonthMain {
         //e
         System.out.printf("%.2fKr",MonthlyPower.computeSpotPrice(power_usage_month, power_prices_month));
         System.out.println();
-        /*
-        TODO
 
-         Write code that tests the methods you implement in the MonthlyPower class
-         Remember to teste the methods as you implement them
-         Remember to also to check that you get the expected results
-         */
+        //f
+        System.out.println("Strømstøtte for måneden: " +MonthlyPower.computePowerSupport(power_usage_month, power_prices_month));
+        System.out.println();
+
+        //g
+        System.out.printf("%.2fKr",MonthlyPower.computeNorgesPrice(power_usage_month));
 
     }
 }
