@@ -17,6 +17,11 @@ public class MonthMain {
         System.out.println("==============");
         System.out.println();
 
+        double thresholdHytte = 1000;
+        double thresholdHus = 5000;
+        boolean cabinExceeded = MonthPrinter.exceedThreshold(power_usage_month, HytteLimit);
+        boolean houseExceeded = MonthPrinter.exceedThreshold(power_usage_month, HusLimit);
+
         //a
         MonthlyPower.print_PowerUsage(power_usage_month);
         System.out.println();
