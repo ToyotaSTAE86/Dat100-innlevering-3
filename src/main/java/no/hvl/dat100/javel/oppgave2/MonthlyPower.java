@@ -19,8 +19,12 @@ public class MonthlyPower {
     // b) print power prices for a month
     public static void print_PowerPrices(double[][] prices) {
 
-        // TODO
-
+        for (int i = 0; i < prices.length; i++) {
+            for (int j = 0; j < prices[i].length; j++) {
+                System.out.print(prices[i][j] + "kr ");
+            }
+            System.out.println();
+        }
     }
 
     // c) compute total power usage for a month
