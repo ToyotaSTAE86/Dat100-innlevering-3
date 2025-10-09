@@ -32,7 +32,7 @@ public class MonthlyPower {
 
         double sum = 0;
         for (int i = 0; i < usage.length; i++) {
-            for (int j = 0; i < usage[i].length; i++) {
+            for (int j = 0; j < usage[i].length; j++) {
                 sum += usage[i][j];
             }
         }

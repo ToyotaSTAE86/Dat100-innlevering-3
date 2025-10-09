@@ -26,7 +26,9 @@ public class MonthMain {
         System.out.println();
 
         //c
-        System.out.println(MonthlyPower.computePowerUsage(power_usage_month));
+        double TotUsage = MonthlyPower.computePowerUsage(power_usage_month);
+        System.out.printf("%.2f", TotUsage);
+
         /*
         TODO
 
