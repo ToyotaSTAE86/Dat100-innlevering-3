@@ -46,9 +46,11 @@ public class Customer {
         agreement = ny;
     }
 
-    public void Customer toString(){
-
-        return null;
+    public String toString(){
+        return  "Customer number" + customer_id + "\n" +
+                "Name" +name + "\n"+
+                "Email" + email + "\n"+
+                "Agreement" + agreement;
     }
 
 }
