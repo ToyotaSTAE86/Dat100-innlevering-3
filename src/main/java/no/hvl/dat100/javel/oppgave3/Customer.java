@@ -15,12 +15,33 @@ public class Customer {
     }
 
     public Customer(String name, String email, int customer_id, PowerAgreementType agreement) {
-
-        // TODO
     }
 
-    // TODO - getter/setter methods for all objectvariables
+    public String getName(){
+        return name;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public int getCustumer_id(){
+        return custumer_id;
+    }
+    public PowerAgreementType getAgreement(){
+        return agreement;
+    }
 
+    public void setName(String ny){
+        name = ny;
+    }
+    public void setEmail(String ny){
+        email = ny;
+    }
+    public void setCustumer_id(int ny){
+        custumer_id = ny;
+    }
+    public void setAgreement(PowerAgreementType){
+        agreement = ny;
+    }
     // TODO - toString method
 
 }
