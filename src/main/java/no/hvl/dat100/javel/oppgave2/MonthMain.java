@@ -19,8 +19,11 @@ public class MonthMain {
 
         double thresholdHytte = 1000;
         double thresholdHus = 5000;
-        boolean cabinExceeded = MonthPrinter.exceedThreshold(power_usage_month, HytteLimit);
-        boolean houseExceeded = MonthPrinter.exceedThreshold(power_usage_month, HusLimit);
+        boolean cabinExceeded = MonthlyPower.exceedThreshold(power_usage_month, thresholdHytte);
+        boolean houseExceeded = MonthlyPower.exceedThreshold(power_usage_month, thresholdHus);
+        System.out.println("Hytte over grensen (1000 kWh)? " + cabinExceeded);
+        System.out.println("Hus over grensen (5000 kWh)? " + houseExceeded);
+        System.out.println();
 
         //a
         MonthlyPower.print_PowerUsage(power_usage_month);
