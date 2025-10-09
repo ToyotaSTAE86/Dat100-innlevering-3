@@ -8,9 +8,11 @@ public class MonthlyPower {
     public static void print_PowerUsage(double[][] usage) {
 
         for (int i = 0; i < usage.length; i++) {
-            System.out.printf("%.2f NOK ", usage[i]);
+            for (int j = 0; j < usage[i].length; j++) {
+                System.out.print(usage[i][j] + " kWh ");
+            }
+            System.out.println();
         }
-        System.out.println();
 
     }
 
