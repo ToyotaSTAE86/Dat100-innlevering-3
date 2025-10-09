@@ -11,8 +11,18 @@ public class CustomerMain {
         System.out.println("==============");
         System.out.println();
 
+        Customer c1 = new Customer("Alice Smith", "Alice@example.com", 1001, PowerAgreementType.SPOTPRICE);
+        System.out.println(c1);
+        System.out.println();
+
+        c1.setName("Lucier trans");
+        c1.setEmail("Lucy@example.com");
+        c1.setAgreement(PowerAgreementType.NORGESPRICE);
+
+        System.out.println("Etter oppdatering: ");
+        System.out.println(c1);
         /*
-        TODO
+
 
          Write code that creates a Customer object and teste the methods implemented in the class
 

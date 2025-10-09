@@ -18,6 +18,7 @@ public class Customer {
         this.name = name;
         this.email = email;
         this.customer_id = customer_id;
+        this.agreement = agreement;
     }
 
     public String getName(){
@@ -46,6 +47,7 @@ public class Customer {
         agreement = ny;
     }
 
+    @Override
     public String toString(){
         return  "Customer number" + customer_id + "\n" +
                 "Name" +name + "\n"+
