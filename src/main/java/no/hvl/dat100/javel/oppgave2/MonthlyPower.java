@@ -31,9 +31,11 @@ public class MonthlyPower {
     public static double computePowerUsage(double[][] usage) {
 
         double sum = 0;
-
-        // TODO
-
+        for (int i = 0; i < usage.length; i++) {
+            for (int j = 0; i < usage[i].length; i++) {
+                sum += usage[i][j];
+            }
+        }
         return sum;
     }
 
