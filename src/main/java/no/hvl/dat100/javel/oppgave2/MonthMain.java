@@ -41,6 +41,11 @@ public class MonthMain {
         //e
         System.out.printf("%.2fKr",MonthlyPower.computeSpotPrice(power_usage_month, power_prices_month));
         System.out.println();
+
+        //f
+        System.out.println("Strømstøtte for måneden: " + MonthlyPower.computePowerSupport(power_usage_month, power_prices_month) + " kr");
+
+
         /*
         TODO
 
