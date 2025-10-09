@@ -15,15 +15,14 @@ public class CustomerMain {
         System.out.println(c1);
         System.out.println();
 
-        c1.setName(": Lucier trans");
-        c1.setEmail(": Lucy@example.com");
+        c1.setName("Lucier trans");
+        c1.setEmail("Lucy@example.com");
         c1.setAgreement(PowerAgreementType.NORGESPRICE);
 
         System.out.println("Etter oppdatering: ");
         System.out.println(c1);
+
         /*
-
-
          Write code that creates a Customer object and teste the methods implemented in the class
 
         */
