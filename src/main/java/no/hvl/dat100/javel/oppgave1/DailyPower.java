@@ -9,6 +9,7 @@ public class DailyPower {
             System.out.printf("%.2f NOK ", prices[i]);
         }
         System.out.println();
+
     }
 
     // b) print power usage during a day
