@@ -42,11 +42,11 @@ public class Invoice {
 
         } else if (c.getAgreement() == PowerAgreementType.POWERSUPPORT) {
 
-            double threshold = 0.70;
-            double rate = 0.90;
 
-            double support = MonthlyPower.computePowerSupport(usage, prices, threshold, rate);
-            amount = spotCost - support;
+
+            double support = MonthlyPower.computePowerSupport(usage, prices);
+            amount = Math.max(0.0, spotCost - support);
+
 
         } else {
             amount = spotCost;

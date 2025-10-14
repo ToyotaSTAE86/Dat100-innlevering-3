@@ -17,7 +17,6 @@ public class InvoiceMain {
         Customer c1 = CustomerPowerData.customer1;
 
         /*
-        TODO
 
          Write code that uses the methods implemented in the Invoice-classes
 
