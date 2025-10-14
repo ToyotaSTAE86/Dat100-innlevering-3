@@ -6,6 +6,7 @@ public class DayMain {
 
         // testdata fra DayPowerData
         double[] powerusage_day = DayPowerData.powerusage_day;
+
         double[] powerprices_day = DayPowerData.powerprices_day;
 
         // a) Strømpriser
