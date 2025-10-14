@@ -55,7 +55,7 @@ public class Invoice {
 
     public void printInvoice() {
 
-        Double totalusage = 0.0;
+        double totalusage = 0.0;
 
         for (int i = 0; i < usage.length; i++) {
             for (int j = 0; j < usage.length; j++) {
