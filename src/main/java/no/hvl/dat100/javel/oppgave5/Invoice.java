@@ -20,6 +20,7 @@ public class Invoice {
         this.month = month;
         this.usage = usage;
         this.prices = power_prices;
+        this.amount = 0;
 
     }
 
