@@ -2,6 +2,7 @@ package no.hvl.dat100.javel.oppgave5;
 
 import no.hvl.dat100.javel.oppgave3.Customer;
 import no.hvl.dat100.javel.oppgave2.MonthlyPower;
+import no.hvl.dat100.javel.oppgave3.PowerAgreementType;
 
 import java.util.Arrays;
 
@@ -25,14 +26,32 @@ public class Invoice {
     }
 
     public void computeAmount() {
+        double spotCost = 0.0;
 
-        // TODO
+        for (int i = 0; i < usage.length; i++) {
+            for (int j = 0; j < usage[i].length; j++) {
+                spotCost += usage[i][j] * prices[i][j];
+            }
+        }
 
+        if (c.getAgreement() == PowerAgreementType.SPOTPRICE) {
+
+            amount = spotCost;
+
+        } else if (c.getAgreement() == PowerAgreementType.NORGESPRICE) {
+
+            amount = MonthlyPower.computeNorgesPrice(usage);
+
+        } else if (c.getAgreement() == PowerAgreementType.POWERSUPPORT) {
+
+            double threshold = 0.70;
+            double rate = 0.90;
+
+            double support = MonthlyPower.computePowerSupport(usage, prices, threshold, rate);
+            amount = spotCost - support;
+
+        } else {
+            amount = spotCost;
+        }
     }
-
-    public void printInvoice() {
-
-        // TODO
-
     }
-}
