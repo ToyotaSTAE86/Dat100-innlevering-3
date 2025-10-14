@@ -35,11 +35,9 @@ public class Invoice {
         }
 
         if (c.getAgreement() == PowerAgreementType.SPOTPRICE) {
-
             amount = spotCost;
 
         } else if (c.getAgreement() == PowerAgreementType.NORGESPRICE) {
-
             amount = MonthlyPower.computeNorgesPrice(usage);
 
         } else if (c.getAgreement() == PowerAgreementType.POWERSUPPORT) {
