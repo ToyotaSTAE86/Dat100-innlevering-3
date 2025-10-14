@@ -89,7 +89,6 @@ public class MonthlyPower {
                 }
             }
         }
-
         return support;
     }
 

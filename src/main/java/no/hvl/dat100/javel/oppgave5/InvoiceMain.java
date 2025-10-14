@@ -12,7 +12,10 @@ public class InvoiceMain {
         System.out.println("OPPGAVE 5");
         System.out.println("==============");
         System.out.println();
-        
+
+
+        Customer c1 = CustomerPowerData.customer1;
+
         /*
         TODO
 
