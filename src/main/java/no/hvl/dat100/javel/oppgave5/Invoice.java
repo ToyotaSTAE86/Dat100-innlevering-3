@@ -62,7 +62,7 @@ public class Invoice {
                 totalusage += usage[i][j];
             }
         }
-        
+
         System.out.println("========================");
         System.out.println("Customer number " + c.getCustomer_id());
         System.out.println("Name " + c.getName());
@@ -70,8 +70,9 @@ public class Invoice {
         System.out.println("Agreement " + c.getAgreement());
         System.out.println();
         System.out.println("Month: " + month);
-        System.out.printf("Usage: " + totalusage);
-        System.out.printf("Amount: " + amount);
+        System.out.printf("Usage: " + totalusage + " Kwh");
+        System.out.printf("Amount: " + amount + " Nok");
+        System.out.println("========================");
 
     }
 }
