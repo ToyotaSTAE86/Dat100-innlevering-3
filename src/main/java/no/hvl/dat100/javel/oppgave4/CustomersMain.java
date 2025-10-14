@@ -2,6 +2,7 @@ package no.hvl.dat100.javel.oppgave4;
 
 import no.hvl.dat100.javel.oppgave3.Customer;
 import no.hvl.dat100.javel.oppgave3.PowerAgreementType;
+import no.hvl.dat100.javel.oppgave5.CustomerPowerUsageData;
 
 public class CustomersMain {
 
@@ -17,7 +18,7 @@ public class CustomersMain {
         Customers customers = new Customers(6);
 
 
-        // Opprett noen Customer-objekter (forutsetter at Customer har denne konstruktøren)
+        // Opprett noen Customer-objekter
         Customer c1 = new Customer("Alice Smith", "alice@example.com",1001, PowerAgreementType.SPOTPRICE);
         Customer c2 = new Customer("Bob Johnson", "bob@example.com",1002, PowerAgreementType.NORGESPRICE);
         Customer c3 = new Customer("Charlie Rose", "charlie@example.com",1003, PowerAgreementType.POWERSUPPORT);
@@ -26,7 +27,7 @@ public class CustomersMain {
         Customer c6 = new Customer("Frank Castle", "frank@example.com",1006, PowerAgreementType.SPOTPRICE);
 
 
-        // Legg til 5 kunder (fyller tabellen)
+        // Legg til 5 kunder
         System.out.println("Legger til 5 kunder...");
         System.out.println("legger til c1: " + customers.addCustomer(c1));
         System.out.println("legger til c2: " + customers.addCustomer(c2));
@@ -53,7 +54,7 @@ public class CustomersMain {
         System.out.println("Antall lagrede kunder nå: " + customers.countNonNull());
 
 
-        // Vis alle nåværende kunder (getCustomers returnerer kun ikke-null elementer)
+        // Vis alle nåværende kunder
         System.out.println("\nListe over aktive kunder:" );
         for (Customer c : customers.getCustomers()) {
             System.out.println(c.getCustomer_id() + " - " + c.getName() + " (" + c.getAgreement() + ")");
