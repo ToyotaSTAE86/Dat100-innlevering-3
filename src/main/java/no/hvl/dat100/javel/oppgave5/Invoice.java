@@ -70,11 +70,8 @@ public class Invoice {
         System.out.println("Agreement " + c.getAgreement());
         System.out.println();
         System.out.println("Month: " + month);
-        System.out.printf("Usage: " + totalusage + " Kwh ");
-        System.out.printf("Amount: " + amount + " Nok ");
+        System.out.printf("Usage: %.2f kWh\n", totalusage);
+        System.out.printf("Amount: %.2f NOK\n", amount);
         System.out.println("========================");
-        System.out.printf("Usage:     %.2f kWh\n", totalusage);
-        System.out.printf("Amount:   %.2f NOK\n", amount);
-        System.out.println("========================\n");
     }
 }
