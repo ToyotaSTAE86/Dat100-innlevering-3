@@ -58,7 +58,7 @@ public class Invoice {
         Double totalusage = 0.0;
 
         for (int i = 0; i < usage.length; i++) {
-            for (int j = 0; j < usage.length; j++) {
+            for (int j = 0; j < usage[i].length; j++) {
                 totalusage += usage[i][j];
             }
         }
@@ -70,8 +70,8 @@ public class Invoice {
         System.out.println("Agreement " + c.getAgreement());
         System.out.println();
         System.out.println("Month: " + month);
-        System.out.printf("Usage: " + totalusage + " Kwh");
-        System.out.printf("Amount: " + amount + " Nok");
+        System.out.printf("Usage: " + totalusage + " Kwh ");
+        System.out.printf("Amount: " + amount + " Nok ");
         System.out.println("========================");
 
     }
